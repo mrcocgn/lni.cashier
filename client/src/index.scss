@@ -1,0 +1,73 @@
+/* ===== CSS ROOT VARIABLEN ===== */
+:root {
+  --color-bg: #f9f9f9;
+  --color-text: #1e1e1e;
+  --color-primary: #2b9348;
+  --color-primary-dark: #20803b;
+  --color-border: #ccc;
+  --radius: 8px;
+  --transition: 0.3s ease-in-out;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+  --color-bg: #1e1e1e;
+  --color-text: #f9f9f9;
+  --color-primary: #2b9348;
+  --color-primary-dark: #3ae374;
+  --color-border: #555;
+}
+
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 16px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 2rem; }
