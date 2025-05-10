@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Dashboard from "./pages/Dashboard";
-import AdminRoute from "./routes/AdminRoute";
+import AdminRoute from "./AdminRoute";
 import StaffRoute from "./routes/StaffRoute";
 
 export default function App() {
