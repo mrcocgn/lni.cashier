@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
 interface AppRoutesProps {
-  role: 'admin' | 'user' | null; // null für nicht eingeloggt
+  role: 'admin' | 'user' | null;
 }
 
 function AppRoutes({ role }: AppRoutesProps) {
   if (!role) {
-    return <div>Please log in.</div>; // Optional: <Navigate to="/login" />
+    return <div>Please log in.</div>;
   }
 
   return (
