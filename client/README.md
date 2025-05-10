@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# lni.cashier — POS Software for Modern Retail
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**lni.cashier** is a point-of-sale (POS) system designed for mobile, tablet, and desktop environments. Developed with React and modern web standards, this solution supports both cloud-based usage and offline functionality via Service Workers. It is ideal for small businesses and freelancers who need a lightweight, secure, and cost-effective way to manage sales, inventory, and financial records.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Features
 
-## Expanding the ESLint configuration
+- ✅ **Responsive UI** – Optimized for mobile, tablet, and desktop
+- 🌙 **Dark/Light Mode Toggle**
+- 📦 **Product and Service Management**
+- 💳 **Cash Payments & Card Terminals** (external)
+- 📤 **Exports for Tax Consultants**
+- 🧾 **End-of-Day Closing (Z-Report)**
+- 🧍 **Multi-User Login System**
+- 🧠 **Barcode-Based Product Recognition**
+- 📡 **Offline-Ready PWA** (with optional download and install)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Technologies Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend:** React, SCSS Modules
+- **Backend:** [Pluggable: Supabase, Node.js or other]
+- **Styling Structure:**
+  - `index.scss` for global root styles
+  - Component-level styles as `*.module.scss` in subfolders
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔐 User Roles & Routes
+
+### Admin Routes
+- `/admin/dashboard` – Admin Dashboard
+- `/admin/register` – Registration & Login
+- `/admin/employees` – Manage Employees
+- `/admin/exports` – Manage Export Templates
+- `/admin/products` – Product Management
+- `/admin/services` – Service Management
+- `/admin/discounts` – Manage Discounts
+- `/admin/customers` – Customer Management
+- `/admin/settings` – Global Settings
+- `/admin/logs` – Logs & User Activity
+- `/admin/support` – Support Inbox
+
+### Staff Routes
+- `/pos` – Cash Register Interface
+- `/sales` – Sales History
+- `/login` – Staff Login
+- `/end-of-day` – Daily Closing Summary
+- `/support` – Access to Support Inbox
+
+---
+
+## 🚀 Planned as SaaS
+
+This project is designed for **SaaS deployment** with a cost-efficient license model and optional export capability. Hosting via Vercel or self-hosting options available.
+
+---
+
+## 📦 Installation (Coming Soon)
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/lni.cashier.git
+
+# Install dependencies
+cd lni.cashier
+yarn install
+
+# Start development server
+yarn dev
