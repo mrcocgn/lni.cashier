@@ -38,7 +38,7 @@ function Calculator() {
     "1", "2", "3", "+", "Products", "Services",
     "0", "00", ".", "Enter / ="
   ];
-
+  
   return (
     <div className="calculator">
       <div className="display">{input}</div>
