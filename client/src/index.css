@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Comfortaa', 'sans-serif';
+    font-style: normal;
+    src: url('/Comfortaa.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,3 +15,4 @@ body {
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
