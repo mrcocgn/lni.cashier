@@ -1,3 +1,15 @@
+.display {
+  background: #222;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin: 12px 15px 0 15px;
+  text-align: right;
+  min-height: 40px;
+}
+
+
 .calculator {
   position: fixed;
   bottom: 0;
@@ -21,7 +33,7 @@
   border: none;
   border-radius: 25px;
   box-shadow: var(--box-shadow);
-  padding: 8px 8px 0px 15px
+  padding: 12px 8px 8px 15px
 }
 
 .div1 {

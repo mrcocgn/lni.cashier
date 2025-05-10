@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Comfortaa', 'sans-serif';
     font-style: normal;
-    src: url('/Comfortaa.ttf') format('truetype');
+    src: url('./Comfortaa.ttf') format('truetype');
 }
 
 body {
