@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from 'react-router-dom';
-import { useAuth } from '../context/useAuth';
+import { useAuth } from './context/useAuth';
 
 export default function StaffRoute() {
   const { user } = useAuth();

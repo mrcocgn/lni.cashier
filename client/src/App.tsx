@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "./auth/Login";
-import Register from "./auth/Register";
-import Dashboard from "./pages/Dashboard";
 import AdminRoute from "./AdminRoute";
-import StaffRoute from "./routes/StaffRoute";
+import StaffRoute from "./StaffRoute";
+import Login from "./auth/Login/Login";
+import Register from "./auth/Register/Register";
+import Dashboard from "./pages/Dashboard";
+
 
 export default function App() {
   return (
